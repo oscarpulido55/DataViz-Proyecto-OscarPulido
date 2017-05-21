@@ -16,8 +16,10 @@ DataVIz Dashboard Example &amp; VainillaJS - Dojo Randori
 
 ```bash
   bower install angular-bootstrap --save
-  
   # add 'ui.bootstrap' to src/app/index.js
+  
+  bower install paper-less --save
+  
   
 ```
 

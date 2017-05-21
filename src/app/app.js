@@ -1,7 +1,7 @@
 angular
   .module('app')
   .component('app', {
-    templateUrl: 'app/hello.html',
+    templateUrl: 'app/template.html',
     controller() {
       this.hello = 'Hello World!';
     }

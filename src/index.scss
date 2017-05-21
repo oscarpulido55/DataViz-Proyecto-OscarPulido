@@ -1,3 +1,4 @@
-body {
-  background-color: lightgrey;
-}
+@import "../bower_components/bootswatch-scss/spacelab/variables";
+@import "../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap";
+@import "../bower_components/bootswatch-scss/spacelab/bootswatch";
+

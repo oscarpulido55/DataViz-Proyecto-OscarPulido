@@ -2,7 +2,7 @@ describe('hello component', () => {
   beforeEach(module('app', $provide => {
     $provide.factory('app', () => {
       return {
-        templateUrl: 'app/hello.html'
+        templateUrl: 'app/template.html'
       };
     });
   }));
