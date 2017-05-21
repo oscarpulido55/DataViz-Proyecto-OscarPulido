@@ -80,5 +80,5 @@
       "xo-space/esnext"
     ]
   },
-  private: true
+  "private": true
 }
