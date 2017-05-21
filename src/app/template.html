@@ -1,12 +1,19 @@
 <div class="container">
 
   <div class="page-header">
-    <h1>{{ $ctrl.hello }}</h1>
-    <p class="lead">Basic grid layouts to get you familiar with building within the Bootstrap grid system.</p>
+    <h1>{{ main.hello }}</h1>
+    <p class="lead">Dashboard to show data about... </p>
   </div>
 
   <div class="row">
-    <div class="col-md-3">a</div>
+    <div class="col-md-3">
+      <nvd3 options="main.options"
+            data="main.data"
+            config="config"
+            events="events"
+            api="api"
+            on-ready="main.callback"></nvd3>
+    </div>
     <div class="col-md-3">b</div>
     <div class="col-md-3">c</div>
     <div class="col-md-3">d</div>

@@ -26,9 +26,7 @@ DataVIz Dashboard Example &amp; VainillaJS - Dojo Randori
 # To add D3 & NVD3
 
 ```bash
-  bower i --save d3
-  bower i --save nvd3
-  bower i --save angularjs-nvd3-directives
+  bower install angular-nvd3
   
   # add 'nvd3ChartDirectives' to src/app/index.js  
   
