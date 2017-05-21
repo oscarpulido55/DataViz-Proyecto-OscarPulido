@@ -79,5 +79,6 @@
     "extends": [
       "xo-space/esnext"
     ]
-  }
+  },
+  private: true
 }

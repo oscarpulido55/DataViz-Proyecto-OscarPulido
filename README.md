@@ -4,7 +4,7 @@ DataViz Dashboard Example &amp; angular.js@1.6.2 - Dojo Randori
 # To start the app to develop locally
 
 ```bash
-  git clone :)
+  git clone https://github.com/Pelirrojo/DataViz-DojoRandori.git
   bower i
   npm i
   npm run serve
@@ -33,7 +33,6 @@ DataViz Dashboard Example &amp; angular.js@1.6.2 - Dojo Randori
   
   # add 'ui.bootstrap' to src/app/index.js
   # add dependenccies to src/index.scss
- 
   
 ```
 
