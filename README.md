@@ -27,16 +27,21 @@ DataViz Dashboard Example &amp; angular.js@1.6.2 - Dojo Randori
 
 ```bash
   bower install angular-bootstrap --save
+  bower install bootstrap-sass@3.2 --save
+  bower install bootswatch-scss@3.2 --save
+  bower install font-awesome@4.7 --save
+  
   # add 'ui.bootstrap' to src/app/index.js
-  
-  bower install paper-less --save
-  
+  # add dependenccies to src/index.scss
+ 
   
 ```
 
 # To add D3 & NVD3
 
 ```bash
+  bower install d3@3 --save
+  bower install nvd3@1.8 --save
   bower install angular-nvd3 --save
   
   # add 'nvd3' to src/app/index.js
