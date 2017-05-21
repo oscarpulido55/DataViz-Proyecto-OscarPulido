@@ -1,5 +1,16 @@
 # DataViz-DojoRandori
-DataVIz Dashboard Example &amp; VainillaJS - Dojo Randori
+DataViz Dashboard Example &amp; angular.js@1.6.2 - Dojo Randori
+
+# To start the app to develop locally
+
+```bash
+  git clone :)
+  bower i
+  npm i
+  npm run serve
+  
+  # Open your browser at: http://localhost:3000
+```
 
 # To run a project seed similar
 
@@ -12,7 +23,7 @@ DataVIz Dashboard Example &amp; VainillaJS - Dojo Randori
     
 ```
 
-# To add bootstrap
+# To add [bootstrap](http://getbootstrap.com/) & [ui-bootstrap](https://angular-ui.github.io/bootstrap/)
 
 ```bash
   bower install angular-bootstrap --save
