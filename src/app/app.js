@@ -5,13 +5,16 @@ angular
     controllerAs: 'main',
     controller($http, jmespath, moment, _) {
 
+      this.chart2 = {data:{},options:{}}
+      this.chart1 = {data:{id:1},options:{}}
+
       // Reference: http://krispo.github.io/angular-nvd3/#/quickstart
-      this.hello = 'Hola alumnos del Master de DataViz 2!';
+      this.hello = 'Cuadro de mando, TransferWise';
       this.greetings = "Bienvenidos al dashboard ficticio de TransferWise"
 
       this.callback = function() { }
 
-      this.options = {
+      this.chart2.options = {
         chart: {
           type: 'discreteBarChart',
           height: 200,
@@ -37,17 +40,17 @@ angular
       };
 
       let rawData = [
-        { "label" : "A" , "value" : -29.765957771107 },
-        { "label" : "B" , "value" : 0 },
-        { "label" : "C" , "value" : 32.807804682612 },
-        { "label" : "D" , "value" : 196.45946739256 },
-        { "label" : "E" , "value" : 0.19434030906893 },
-        { "label" : "F" , "value" : -98.079782601442 },
-        { "label" : "G" , "value" : -13.925743130903 },
-        { "label" : "H" , "value" : -5.1387322875705 }
+        { "label" : "A" , "value" : 150000000 },
+        { "label" : "B" , "value" : 160000000 },
+        { "label" : "C" , "value" : 140000000 },
+        { "label" : "D" , "value" : 110000000 },
+        { "label" : "E" , "value" : 100000000 },
+        { "label" : "F" , "value" : 200000000 },
+        { "label" : "G" , "value" : 130000000 },
+        { "label" : "H" , "value" : 120000000 }
       ]
 
-      this.data = [{
+      this.chart2.data = [{
         key: "Cumulative Return",
         values: rawData
       }]

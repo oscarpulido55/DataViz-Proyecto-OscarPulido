@@ -4,40 +4,35 @@
     <h1>{{ main.hello }}</h1>
     <p class="lead">{{ main.greetings }}</p>
   </div>
+  <div class="col-md-4">
+    Valor GBP-EUR
+    {{main.chart1.data}}
 
+
+  </div>
   <div class="row">
     <div class="col-md-4">
-      <nvd3 options="main.options"
-            data="main.data"
+      <nvd3 options="main.chart2.options"
+            data="main.chart2.data"
             config="config"
             events="events"
             api="api"
-            on-ready="main.callback">
+            on-ready="main.chart2.callback">
       </nvd3>
-    </div>
-
-    <div class="col-md-4">
-      Transacciones Día
     </div>
     <div class="col-md-4">
       Margen Financiero
     </div>
-
   </div>
-
   <div class="row">
     <div class="col-md-6">
-mapa
-
+      mapa
     </div>
     <div class="col-md-3">
       Rango de Operaciones por Tamaño
     </div>
-
     <div class="col-md-3">
       Valoración Usuario
     </div>
-
   </div>
-
 </div>
