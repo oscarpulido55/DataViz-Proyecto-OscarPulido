@@ -6,13 +6,20 @@
   </div>
   <div class="col-md-4">
     Valor GBP-EUR
-    {{main.chart1.data}}
-
+      <nvd3 id="grafico1"
+            options="main.chart1.options"
+            data="main.chart1.data"
+            config="config"
+            events="events"
+            api="api"
+            on-ready="main.chart2.callback">
+      </nvd3>
 
   </div>
   <div class="row">
     <div class="col-md-4">
-      <nvd3 options="main.chart2.options"
+      <nvd3 id="grafico2"
+            options="main.chart2.options"
             data="main.chart2.data"
             config="config"
             events="events"
