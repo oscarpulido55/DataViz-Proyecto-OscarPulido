@@ -6,7 +6,8 @@ angular
     controller($http, jmespath, moment, _) {
 
       // Reference: http://krispo.github.io/angular-nvd3/#/quickstart
-      this.hello = 'Hello Student!';
+      this.hello = 'Hola alumnos del Master de DataViz 2!';
+      this.greetings = "Bienvenidos al dashboard ficticio de TransferWise"
 
       this.callback = function() { }
 
