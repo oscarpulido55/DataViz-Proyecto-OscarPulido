@@ -96,11 +96,11 @@ app.get('/data/chart1', function (req, res) {
             ]
           }
         ]
-  
+
   );
-    
+
 });
 
-app.listen(3001, function () {
+app.listen(7001, function () {
   console.log('Example app listening on port 3001!');
 });
