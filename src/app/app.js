@@ -56,7 +56,7 @@ angular
         values: rawData
       }]
 
-      //GRafico 2
+      //Grafico 2
       ///////////////////////////////////////////////////////////////////////////////////////////////////////////////7
 
       this.chart1 = {data:{id:1},options:{}}
@@ -179,103 +179,13 @@ angular
 
       this.chart3.data = []
 
-      $http.get("http://localhost:7001/data/chart1")
+      $http.get("http://localhost:7001/data/chart3")
         .then((response) => {
-          debugger
           this.chart3.data = response.data
         });
 
-        /*
-      this.chart3.data=
-        [
-          {
-            "key": "Series1",
-            "color": "#d62728",
-            "values": [
-              {
-                "label" : "Group A" ,
-                "value" : -1.8746444827653
-              } ,
-              {
-                "label" : "Group B" ,
-                "value" : -8.0961543492239
-              } ,
-              {
-                "label" : "Group C" ,
-                "value" : -0.57072943117674
-              } ,
-              {
-                "label" : "Group D" ,
-                "value" : -2.4174010336624
-              } ,
-              {
-                "label" : "Group E" ,
-                "value" : -0.72009071426284
-              } ,
-              {
-                "label" : "Group F" ,
-                "value" : -0.77154485523777
-              } ,
-              {
-                "label" : "Group G" ,
-                "value" : -0.90152097798131
-              } ,
-              {
-                "label" : "Group H" ,
-                "value" : -0.91445417330854
-              } ,
-              {
-                "label" : "Group I" ,
-                "value" : -0.055746319141851
-              }
-            ]
-          },
-          {
-            "key": "Series2",
-            "color": "#1f77b4",
-            "values": [
-              {
-                "label" : "Group A" ,
-                "value" : 25.307646510375
-              } ,
-              {
-                "label" : "Group B" ,
-                "value" : 16.756779544553
-              } ,
-              {
-                "label" : "Group C" ,
-                "value" : 18.451534877007
-              } ,
-              {
-                "label" : "Group D" ,
-                "value" : 8.6142352811805
-              } ,
-              {
-                "label" : "Group E" ,
-                "value" : 7.8082472075876
-              } ,
-              {
-                "label" : "Group F" ,
-                "value" : 5.259101026956
-              } ,
-              {
-                "label" : "Group G" ,
-                "value" : 0.30947953487127
-              } ,
-              {
-                "label" : "Group H" ,
-                "value" : 0
-              } ,
-              {
-                "label" : "Group I" ,
-                "value" : 0
-              }
-            ]
-          }
-        ]
-        */
 
-      //GRafico 4
+      //Grafico 4
       ///////////////////////////////////////////////////////////////////////////////////////////////////////////////7
 
       this.chart4 = {
@@ -310,7 +220,14 @@ angular
         }
       };
 
+      this.chart4.data = []
 
+      $http.get("http://localhost:7001/data/chart4")
+        .then((response) => {
+          debugger
+          this.chart4.data = response.data
+        });
+      /*
       this.chart4.data= [
         {
           key: "One",
@@ -341,9 +258,11 @@ angular
           y: .5
         }
       ];
-
-        //GRafico 4
+    */
+        //GRafico 5
       ///////////////////////////////////////////////////////////////////////////////////////////////////////////////7
+
+
 
       this.chart5 = {
         data: {
@@ -374,37 +293,12 @@ angular
             }
       };
 
-     this.chart5.data = [
-            {
-                key: "One",
-                y: 5
-            },
-            {
-                key: "Two",
-                y: 2
-            },
-            {
-                key: "Three",
-                y: 9
-            },
-            {
-                key: "Four",
-                y: 7
-            },
-            {
-                key: "Five",
-                y: 4
-            },
-            {
-                key: "Six",
-                y: 3
-            },
-            {
-                key: "Seven",
-                y: .5
-            }
-        ];
+      this.chart5.data = []
 
+      $http.get("http://localhost:7001/data/chart5")
+        .then((response) => {
+          this.chart5.data = response.data
+        });
 
     }
   });
