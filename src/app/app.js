@@ -146,7 +146,7 @@ angular
         return {x: i, y: Math.max(0, d)};
       }
 
-//GRafico 3
+      //Gráfico 3
       ///////////////////////////////////////////////////////////////////////////////////////////////////////////////7
       this.chart3 = {
         data: {
@@ -177,6 +177,15 @@ angular
         }
       };
 
+      this.chart3.data = []
+
+      $http.get("http://localhost:7001/data/chart1")
+        .then((response) => {
+          debugger
+          this.chart3.data = response.data
+        });
+
+        /*
       this.chart3.data=
         [
           {
@@ -264,6 +273,7 @@ angular
             ]
           }
         ]
+        */
 
       //GRafico 4
       ///////////////////////////////////////////////////////////////////////////////////////////////////////////////7
