@@ -12,6 +12,16 @@ DataViz Dashboard Example &amp; angular.js@1.6.2 - Dojo Randori
   # Open your browser at: http://localhost:3000
 ```
 
+# To start the server
+
+```bash
+  cd server
+  npm i express
+  npm i cors
+  node index
+```
+ 
+
 # To run a project seed similar
 
 ```bash

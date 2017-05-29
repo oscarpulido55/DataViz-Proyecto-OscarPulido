@@ -9,7 +9,7 @@ angular
 
       // Reference $HTTP: https://www.w3schools.com/angular/angular_http.asp
       // Reference NVD3: http://krispo.github.io/angular-nvd3/#/quickstart
-      
+
       this.hello = 'Cuadro de mando, TransferWise';
       this.greetings = "Bienvenidos al dashboard ficticio de TransferWise"
 
