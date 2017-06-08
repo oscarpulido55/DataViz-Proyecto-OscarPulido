@@ -1,4 +1,4 @@
-# Proyecto final Vizualizacion de datos 2
+# Proyecto Vizualizacion de datos 2
 Proyecto de clase Vizualizacion de datos 2 en &amp; angular.js@1.6.2
 
 # Para iniciar el proyecto localmente
