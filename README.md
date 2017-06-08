@@ -1,5 +1,5 @@
 # Proyecto final Vizualizacion de datos 2
-DataVizualization Dashboard Class Project &amp; angular.js@1.6.2
+Proyecto de clase Vizualizacion de datos 2 en &amp; angular.js@1.6.2
 
 # Para iniciar el proyecto localmente
 
@@ -9,7 +9,7 @@ DataVizualization Dashboard Class Project &amp; angular.js@1.6.2
   npm i
   npm run serve
   
-  # Open your browser at: http://localhost:3000
+  # Abra el explorador en: http://localhost:3000
 ```
 
 # Para iniciar el servidor Back-end
