@@ -80,5 +80,8 @@
       "xo-space/esnext"
     ]
   },
-  "private": true
+  "private": true,
+  "dependencies": {
+    "alasql": "^0.4.0"
+  }
 }

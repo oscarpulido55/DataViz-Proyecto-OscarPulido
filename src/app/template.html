@@ -3,49 +3,96 @@
   <div class="page-header">
     <h1>{{ main.hello }}</h1>
     <p class="lead">{{ main.greetings }}</p>
-  </div>
-  
-  <div class="row">
-    <div class="col-md-4">
-        <h2>Valor GBP-EUR</h2>
-          <nvd3 id="grafico1"
-                options="main.chart1.options"
-                data="main.chart1.data">
-          </nvd3>
-    </div>
-    <div class="col-md-4">
-        <h2>Total operaciones.</h2>
-      <nvd3 id="grafico2"
-            options="main.chart2.options"
-            data="main.chart2.data"
-            >
-      </nvd3>
-    </div>
-    <div class="col-md-4">
-        <h2>Margen financiero</h2>
-      <nvd3 id="grafico3"
-            options="main.chart3.options"
-            data="main.chart3.data">
-      </nvd3>
-    </div>
+    <p class="lead">{{ main.author }}</p>
   </div>
   <div class="row">
     <div class="col-md-6">
-      mapa
-    </div>
-    <div class="col-md-3">
-      <h2>Rango de Operaciones por Tamaño</h2>
-        <nvd3 id="grafico5"
-            options="main.chart5.options"
-            data="main.chart5.data">
+      <h2>Distrubución por mes</h2>
+      <nvd3 id="grafico1"
+            options="main.chart1.options"
+            data="main.chart1.data">
       </nvd3>
     </div>
-    <div class="col-md-3">
-        <h2>Valoraciones de los clientes</h2>
-      <nvd3 id="grafico4"
-            options="main.chart4.options"
-            data="main.chart4.data">
+    <div class="col-md-6">
+      <h2>Porcentaje por pais</h2>
+      <nvd3 id="grafico2"
+            options="main.chart2.options"
+            data="main.chart2.data">
       </nvd3>
     </div>
   </div>
+  <div class="row">
+    <div class="col-md-12">
+      <h2>Informe</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <h3>Justificación del gráfico escogido.</h3>
+      <p>Teniendo en cuenta que se quieren conocer los países con mayor fujo de viajeros y su proporción aproximada, se
+        elije un diagrama pie que permite representar varios datos. Interesa mostrar el número ingresos por nacionalidad
+        de manera gráfica, de tal manera que se pueda visualizar la proporción en que aparece cada país con respecto del
+        total.
+        A pesar de que este gráfico es poco recomendable debido a que nuestra capacidad perceptual para estimar
+        relaciones de proporción o diferencias entre áreas de sectores circulares es mucho menor que, por ejemplo, entre
+        longitudes o posiciones, tal y como sucede en otras gráficas, en este caso puntual permite observar bien la
+        información relevante. </p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <h3>Análisis de los datos</h3>
+      <p>Con los datos del tercer trimestre de 2016 se crea la visualización en donde se identifican los países con
+        mayor cantidad de viajeros ingresando al país y la distribucion por mes.</p>
+      <p>Se observa un incremento de flujo de viajeros en el mes de agosto, justo en la mitad del verano en el
+        hemisferio norte, por lo que este flujo mayor puede deberse al turismo y a la naturaleza tropical del país para
+        pasar vacaciones.
+        Luego del turismo y los viajes de negocios desde USA, otros países de Latinoamerica o Europa, es interesante ver
+        la cantidad de entradas al país de Venezolanos, esto podría atribuirse a la fuerte crisis económica y social de
+        este país y la facilidad para migrar.</p>
+      <p>A partir del archivo .json construido se ejecuntan las consultas conrrespondientes con agrupación para generar
+        el json que acepta la libreria de vizualización:</p>
+      <img src="/images/cocinado.png" alt="cocinado" style="width:600px;height:400px;">
+
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <h3>Fuente de datos escogida</h3>
+      <p>El gobierno de colombia tiene un reposistorio de datos libres en</p>
+      <a href="https://herramientas.datos.gov.co/">herramientas.datos.gov.co</a>
+    </div>
+    <div class="col-md-6">
+      <img src="/images/fuente_1.png" alt="fuente1" style="width:600px;height:400px;">
+    </div>
+    <div class="col-md-6">
+      <img src="/images/fuente_2.png" alt="fuente2" style="width:400px;height:280px;">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <p>Se selecciona un conjunto de datos de Migración Colombia que publicó las entradas de extranjeros a Colombia
+        desde el tercer trimestre de 2015 hasta el tercer trimestre de 2016. Estos datos permiten identificar a los
+        extranjeros que ingresaron a Colombia por mes, nacionalidad y género, lo que permite realizar un análisis de los
+        flujos migratorios hacia Colombia.</p>
+    </div>
+    <div class="col-md-6">
+      <img src="/images/fuente_3.png" alt="fuente3" style="width:600px;height:400px;">
+    </div>
+    <div class="col-md-6">
+      <img src="/images/fuente_6.png" alt="fuente6" style="width:600px;height:400px;">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <p>El conjunto de datos en formato json ofrece mas opciones pero se deciden usar los datos en formato .csv y
+        construir el json manualmente para ajustar el formato a la herramienta de "cocinado" de datos elegida "alasql",
+        finalmente se tiene el siguiente json:</p>
+    </div>
+    <div class="col-md-12">
+      <img src="/images/fuente_4.png" alt="fuente4" style="width:600px;height:400px;">
+    </div>
+
+  </div>
+
 </div>
